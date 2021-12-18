@@ -1,0 +1,259 @@
+#include<stdio.h>
+#include<time.h>
+
+int main() {
+    FILE *fi = fopen("files/lab1.txt", "r");
+    FILE *fo1 = fopen("files/lab1w.txt", "w");
+    FILE *fo2 = fopen("files/lab1w.dat", "wb");
+
+    clock_t start_t, end_t;
+
+    start_t = clock();
+    int c = fgetc(fi);
+    while (c != EOF) {
+        fputc(c, fo1);
+        c = fgetc(fi);
+    }
+    end_t = clock();
+    printf("fgetc & fputc: %lf\n", (double) end_t - start_t);
+
+    fseek(fi, 0, SEEK_SET);
+    start_t = clock();
+    char buff[60];
+    while(fgets(buff, 60, fi) != NULL) {
+        fputs(buff, fo1);
+    }
+    end_t = clock();
+    printf("fgets & fputs: %lf\n", (double) end_t - start_t);
+
+    fseek(fi, 0, SEEK_SET);
+    start_t = clock();
+    char buff2[11];
+    c = fread(buff2, 1, 10, fi);
+    while (c != 0) {
+        fwrite(buff2, 1, c, fo2);
+        c = fread(buff2, 1, 10, fi);
+    }
+    end_t = clock();
+    printf("fread & fwrite: %lf\n", (double) end_t - start_t);
+
+    fclose(fi);
+    fclose(fo1);
+    fclose(fo2);
+    return 0;
+}
+
+// files used: lab1.txt, lab1w.txt and lab1w.dat
+Étudiant
+Hoàng Thiên Vũ
+31
+Bạn đã gửi
+:))
+Étudiant
+Hoàng Thiên Vũ
+#include<stdio.h>
+
+typedef struct {
+    int STT;
+    int MSSV;
+    char name[64];
+    int phone;
+    int mark;
+} student;
+
+
+int main() {
+    FILE *fi = fopen("files/bangdiem.txt", "r");
+    if (fi == NULL) {
+        printf("Input file not found!\n");
+        return 1;
+    }
+    FILE *fo = fopen("files/student.dat", "wb");
+    student st[10];
+    int c;
+    int count = 0;
+    while (c = fgetc(fi) != EOF) {
+        fscanf(fi, " %d %s %d %d", &st[count].MSSV, st[count].name, &st[count].phone, &st[count].mark);
+        st[count].STT = count + 1;
+        count++;
+        c = fgetc(fi);
+    }
+
+    for (int i = 0; i < count; i++) {
+        fwrite(&st[i], sizeof(st), 1, fo);
+    }
+
+    for (int i = 0; i < count; i++) {
+        printf("%d %d %s %d %d\n", st[i].STT, st[i].MSSV, st[i].name, st[i].phone, st[i].mark);
+    }
+    fclose(fi);
+    fclose(fo);
+    return 0;
+}
+
+// files used: bangdiem.txt and student.dat
+Étudiant
+Hoàng Thiên Vũ
+32
+Étudiant
+Hoàng Thiên Vũ
+#include<stdio.h>
+
+typedef struct {
+    char name[30];
+    char number[20];
+    char address[100];
+} directory;
+
+int main() {
+    directory dir[101];
+    printf("Nhap danh ba:\nName Number Address\n");
+    for (int i = 0; i < 20; i++) {
+        scanf("%s %s %s", dir[i].name, dir[i].number, dir[i].address);
+    }
+    FILE *f = fopen("files/phonebook.dat", "w+b");
+    for (int i = 0; i < 20; i++) {
+        fwrite(&dir[i], sizeof(directory), 1, f);
+    }
+    fseek(f, 0, SEEK_SET);
+    directory check[101];
+    for (int i = 0; i < 20; i++) {
+        fread(&check[i], sizeof(directory), 1, f);
+        printf("%s %s %s\n", check[i].name, check[i].number, check[i].address);
+    }
+    fclose(f);
+    return 0;
+}
+
+//files used: phonebook.dat
+Étudiant
+Hoàng Thiên Vũ
+33
+Étudiant
+Hoàng Thiên Vũ
+#include<stdio.h>
+
+typedef struct {
+    char name[30];
+    char number[20];
+    char address[100];
+} directory;
+
+int main() {
+    FILE *f = fopen("files/phonebook.dat", "rb+");
+    int n;
+    printf("Record number: ");
+    scanf("%d", &n);
+    directory dir[101];
+    fseek(f, (n - 1) * sizeof(directory), SEEK_SET);
+    fread(&dir[n - 1], sizeof(directory), 1, f);
+    for (int i = 0; i < sizeof(dir[n - 1].address); i++) {
+        dir[n - 1].address[i] = '\0';
+    }
+    printf("New email: ");
+    scanf(" %s", dir[n - 1].address);
+    fseek(f, (n - 1) * sizeof(directory), SEEK_SET);
+    fwrite(&dir[n - 1], sizeof(directory), 1, f);
+    fseek(f, 0, SEEK_SET);
+    directory check[101];
+    for (int i = 0; i < 20; i++) {
+        fread(&check[i], sizeof(directory), 1, f);
+        printf("%s %s %s\n", check[i].name, check[i].number, check[i].address);
+    }
+    fclose(f);
+    return 0;
+}
+
+// files used: phonebook.dat
+Étudiant
+Hoàng Thiên Vũ
+34
+Étudiant
+Hoàng Thiên Vũ
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int main(int argc, char *argv[]) {
+    if (argc < 5) {
+        printf("Not enough arguments!\n");
+        return 1;
+    }
+    char h1[20] = "files/";
+    FILE *fi = fopen(strcat(h1, argv[1]), "rb");
+    if (fi == NULL) {
+        printf("Input file not found!\n");
+        return 2;
+    }
+    char h2[20] = "files/";
+    FILE *f1 = fopen(strcat(h2, argv[3]), "wb");
+    char h3[20] = "files/";
+    FILE *f2 = fopen(strcat(h3, argv[4]), "wb");
+    char buff[150];
+    for (int i = 0; i < atoi(argv[2]); i++) {
+        fread(buff, 150, 1, fi);
+        fwrite(buff, 150, 1, f1);
+    }
+    while(fread(buff, 150, 1, fi) != 0) {
+        fwrite(buff, 150, 1, f2);
+    }
+    fclose(fi);
+    fclose(f1);
+    fclose(f2);
+    return 0;
+}
+Étudiant
+Hoàng Thiên Vũ
+35
+Étudiant
+Hoàng Thiên Vũ
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+typedef struct {
+    char name[30];
+    char number[20];
+    char address[100];
+} directory;
+
+int main(int argc, char *argv[]) {
+    if (argc < 4) {
+        printf("Not enough arguments!\n");
+        return 1;
+    }
+    char h1[20] = "files/";
+    FILE *f1 = fopen(strcat(h1, argv[1]), "rb");
+    if (f1 == NULL) {
+        printf("Input file not found!\n");
+        return 2;
+    }
+    char h2[20] = "files/";
+    FILE *f2 = fopen(strcat(h2, argv[2]), "rb");
+    if (f2 == NULL) {
+        printf("Input file not found!\n");
+        return 2;
+    }
+    char h3[20] = "files/";
+    FILE *fo = fopen(strcat(h3, argv[3]), "wb+");
+    char buff[150];
+    while(fread(buff, 150, 1, f1) != 0) {
+        fwrite(buff, 150, 1, fo);
+    }
+    while(fread(buff, 150, 1, f2) != 0) {
+        fwrite(buff, 150, 1, fo);
+    }
+    fseek(fo, 0, SEEK_SET);
+    directory check[101];
+    for (int i = 0; i < 20; i++) {
+        fread(&check[i], sizeof(directory), 1, fo);
+        printf("%s %s %s\n", check[i].name, check[i].number, check[i].address);
+    }
+    fclose(fo);
+    fclose(f1);
+    fclose(f2);
+    return 0;
+}
+Étudiant
+Hoàng Thiên Vũ
+36

@@ -1,0 +1,44 @@
+vd1-4
+VD1-4
+#include <stdio.h>
+#INCLUDE <STDIO.H>
+int main(int argc, char const *argv[])
+INT MAIN(INT ARGC, CHAR CONST *ARGV[])
+{
+{
+	FILE *inp = fopen("input.txt", "r");
+	 *INP = FOPEN("INPUT.TXT", "R");
+	if (!inp) {
+	IF (!INP) {
+		printf("Loi mo tep input.txt.\n");
+		PRINTF("OI MO TEP INPUT.TXT.\N");
+		return 1;
+		RETURN 1;
+	}
+	}
+	FILE *out = fopen("output.txt", "w");
+	 *OUT = FOPEN("OUTPUT.TXT", "W");
+	if (!out) {
+	IF (!OUT) {
+		printf("Loi mo tep output.txt.\n");
+		PRINTF("OI MO TEP OUTPUT.TXT.\N");
+		return 1;
+		RETURN 1;
+	}
+	}
+	int c;
+	INT C;
+	while ((c=fgetc(inp)) != EOF) {
+	WHILE ((C=FGETC(INP)) != ) {
+		fputc(c, out);
+		FPUTC(C, OUT);
+	}
+	}
+	fclose(inp);
+	FCLOSE(INP);
+	fclose(out);
+	FCLOSE(OUT);
+	return 0;
+	RETURN 0;
+}
+}
