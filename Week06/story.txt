@@ -1,0 +1,10 @@
+Ha_Noi mua_thu mua_thu Ha_Noi
+Mua_hoa_sua ve thom tung con gio
+git clone <dia chi>
+git pull
+git add
+git commit -m
+git status
+git diff
+git reset HEAD --hard
+git push

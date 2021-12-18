@@ -1,0 +1,57 @@
+#include "ext/io.h"
+#include "cgen.ic"
+#include<string.h>
+
+void bn_pprint_node(bn_node_t n) {
+  printf("%p\n", n);
+}
+
+bn_node_t bns_insert_word(bn_tree_t t, gtype key) {
+  bn_node_t nn = bns_create_node_g(key);
+  bn_node_t top = t->root;
+  bn_node_t *loc = &(t->root);
+  bn_compare_t cmp = to_bns_tree_g(t)->cmp;
+  while (top) {
+	int order = 1;
+  	bn_traverse_lnr(cur, t) {
+  		if (order) {
+  			order = bns_gcmp(key, cur);
+  			printf("%d", order);
+  		}
+  	}
+  	if (!order) {
+  		bn_node_t tmp = bns_child(top, order);
+    	if (tmp) {
+      		top = tmp;
+    	} else {
+      		loc = bns_child_ref(top, order);
+      	break;
+    	}
+  	}
+  }
+  bn_insert(t, nn, loc, top);
+  return nn;
+}
+int main(int argc, char *argv[])
+{
+	if ((argc != 2) && (argc != 3)) {
+		printf("Usage: ./prog story.txt\n");
+		return 1;
+	}
+	FILE *f = fopen(argv[1], "r");
+	if (!f) {
+		printf("Loi mo tep %s.\n", argv[1]);
+		return 1;
+	}	
+	bn_tree_t t = bns_create_tree_g(NULL, gtype_cmd_s);
+	while (!feof(f)) {
+		char *line = NULL;
+		fscanf(f, "%s", line);
+  		printf("%s\n", line);
+		bns_insert_word(t, gtype_s(line));
+  	}
+    bn_pprint(t, bn_pprint_node);
+    bn_free_tree(&t);
+	fclose(f);
+	return 0;
+}
