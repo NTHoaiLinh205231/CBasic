@@ -1,0 +1,371 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"c",
+				"count"
+			],
+			[
+				"sll",
+				"sll_traverse"
+			],
+			[
+				"ar",
+				"argv"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"bns",
+				"bns_insert_word"
+			],
+			[
+				"bn",
+				"bn_node_t"
+			],
+			[
+				"dll_n",
+				"dll_node_by_id"
+			],
+			[
+				"sll_st",
+				"sll_stack_pprint"
+			],
+			[
+				"sll_no",
+				"sll_node_d_value"
+			],
+			[
+				"sll_stack",
+				"sll_stack_push_d"
+			],
+			[
+				"sll_stac",
+				"sll_stack_top_d"
+			],
+			[
+				"sll_node",
+				"sll_node_d"
+			],
+			[
+				"sll_cre",
+				"sll_create_node_d"
+			],
+			[
+				"dll_",
+				"dll_node_t"
+			],
+			[
+				"dll_node",
+				"dll_node_song_t"
+			],
+			[
+				"dll",
+				"dll_push_back"
+			],
+			[
+				"dll_cr",
+				"dll_creat_list_song"
+			],
+			[
+				"dll_p",
+				"dll_pprint_node_song"
+			],
+			[
+				"dll_no",
+				"dll_node_song_name"
+			],
+			[
+				"dll_c",
+				"dll_creat_node_song"
+			],
+			[
+				"fc",
+				"fscanf"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 252.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/media/sf_CTDLGT/Week07/binarytree.c",
+		"/media/sf_CBasic/Week09/bai7-2.c",
+		"/media/sf_CBasic/Week07/bai7.c",
+		"/media/sf_CBasic/Week07/chap7.h",
+		"/media/sf_CBasic/Week07/baitap7.h",
+		"/media/sf_CBasic/Week07/baitap7.txt",
+		"/media/sf_CBasic/Week07/b7-parse-arri.c",
+		"/media/sf_CBasic/Week06/bai6-5.c",
+		"/media/sf_CBasic/Week07/b7-lca.c",
+		"/media/sf_CBasic/Week06/story.txt",
+		"/media/sf_CBasic/Week06/5.c",
+		"/media/sf_CBasic/Week06/bai6-4.c",
+		"/media/sf_CBasic/Week06/bai6-3.c",
+		"/media/sf_CBasic/Week06/bai6-2.c",
+		"/media/sf_CBasic/Week06/bai6-1.c",
+		"/media/sf_CBasic/Week07/bai7-1.c",
+		"/media/sf_CBasic/Week06/bai6-5.txt",
+		"/media/sf_CBasic/Week06/bai6-3.txt",
+		"/media/sf_CBasic/Week05/vidu5-3-queue-ij.c",
+		"/media/sf_CBasic/Week05/vidu5-2-stack-d.c",
+		"/media/sf_CBasic/Week05/vidu5-2-plan.txt.txt",
+		"/media/sf_CBasic/Week05/vidu5-2-docdulieu.c",
+		"/media/sf_CBasic/cgen/gtype.h",
+		"/media/sf_CBasic/Week05/vidu5-1-OOP-sll-g.c",
+		"/media/sf_CBasic/Week05/bai5-1.c",
+		"/media/sf_CBasic/Week05/vidu5-1-songlist.c",
+		"/media/sf_CBasic/Week05/vidu5-1-doctep.c",
+		"/media/sf_CBasic/Week05/vidu5-1-sll-l.c",
+		"/media/sf_CBasic/Week05/vidu5-1-dll-i.c",
+		"/media/sf_CBasic/c-basic/baitap/vidu5-1-doctep.c",
+		"/media/sf_CBasic/c-basic/baitap/vidu5-1-dll-i.c",
+		"/media/sf_CBasic/c-basic/baitap/vidu5-3-queue-ij.c",
+		"/media/sf_CBasic/c-basic/baitap/vidu5-2-stack-d.c",
+		"/media/sf_CBasic/c-basic/baitap/vidu5-2-docdulieu.c",
+		"/media/sf_CBasic/c-basic/baitap/vidu5-1-songlist.c",
+		"/media/sf_CBasic/Week04/double_linked_list.c",
+		"/media/sf_CBasic/c-basic/baitap/vidu5-1-sll-l.c",
+		"/media/sf_CBasic/c-basic/baitap/vidu5-2-queue-ij.c",
+		"/media/sf_CBasic/c-basic/baitap/cidu5-2-docdulieu.c",
+		"/media/sf_CBasic/c-basic/baitap/vidu5-1-OOP-sll-g.c",
+		"/media/sf_CBasic/c-basic/bkc/double_linked_list.c",
+		"/media/sf_CBasic/c-basic/bkc/double_linhked_list.c",
+		"/media/sf_CBasic/c-basic/bkc/b/double_linked_list.c",
+		"/media/sf_CBasic/c-basic/double_linked_list.c",
+		"/media/sf_CBasic/Week02/bai1-35-tach.c",
+		"/media/sf_CBasic/Week02/bai1-34.c",
+		"/media/sf_CBasic/Week02/bai1-33.c",
+		"/media/sf_CBasic/Week02/bai1-35-ghep.c",
+		"/media/sf_CBasic/Week04/double_linked_lít.c",
+		"/media/sf_CBasic/Week02/bai1-32.c",
+		"/media/sf_CBasic/Week02/bai1-28.c",
+		"/media/sf_CBasic/Week02/bai1-35-ghep",
+		"/media/sf_CBasic/Week02/bai1-31.c",
+		"/media/sf_CBasic/Week03/vd2.c",
+		"/media/sf_CBasic/Week03/vd1.c",
+		"/media/sf_CBasic/Week02/bai1-30.c",
+		"/media/sf_CBasic/Week02/bai1-29.c",
+		"/media/sf_CBasic/Week02/bai1-19.c",
+		"/media/sf_CBasic/Week02/bai1-12.c",
+		"/media/sf_CBasic/Week02/vd1-7-b.c",
+		"/media/sf_CBasic/Week02/vd1-7.c",
+		"/media/sf_CBasic/Week02/vd1-5-r.c",
+		"/media/sf_CBasic/Week02/vd1-5-w.c",
+		"/media/sf_CBasic/Week02/bai1-29-check.c",
+		"/media/sf_CBasic/Week02/vd1-6.c",
+		"/media/sf_CBasic/Week02/bai1-27.c",
+		"/media/sf_CBasic/Week02/bai1-25.c",
+		"/media/sf_CBasic/Week02/bai1-24.c",
+		"/media/sf_CBasic/Week02/bai1-23.c",
+		"/media/sf_CBasic/Week02/bai1-22.c",
+		"/media/sf_CBasic/Week02/bai1-18.c",
+		"/media/sf_CBasic/Week02/vd1-5.c",
+		"/media/sf_CBasic/Week02/bai1-21.c",
+		"/media/sf_CBasic/Week02/bai1-26.c",
+		"/media/sf_CBasic/Week02/bai1-20.c",
+		"/media/sf_CBasic/Week02/bai1-14.c",
+		"/media/sf_CBasic/Week02/bai1-13.c",
+		"/media/sf_CBasic/Week02/bai1-17.c",
+		"/media/sf_CBasic/Week02/bai1-16.c",
+		"/media/sf_CBasic/Week02/bai1-15.c",
+		"/media/sf_CBasic/Week02/vd1-4-2.c",
+		"/media/sf_CBasic/Week02/vd1-4.c",
+		"/media/sf_CBasic/Week02/vd1-3.c",
+		"/media/sf_CBasic/Week02/cd1-6.c",
+		"/media/sf_CBasic/Week01/bai1-10.c",
+		"/media/sf_CBasic/Week01/bai1-5-nguoc.c",
+		"/media/sf_CBasic/Week01/bai1-9.c",
+		"/media/sf_CBasic/Week01/bai1-7.c",
+		"/media/sf_CBasic/Week01/bai1-1.c"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "text.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/media/sf_CBasic/Week09/bai7-1.c"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 154.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
