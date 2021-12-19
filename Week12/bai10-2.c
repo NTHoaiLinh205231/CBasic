@@ -187,11 +187,13 @@ int delete(song *list, int *num, const char *filename) {
 	int del;
 	scanf("%d", &del);
 	clear_stdin();
-	printf("Ban thuc su muon xoa toan bo thong tin cua bai hat nay (y/n)?  ");
+	printf("Ban thuc su muon xoa toan bo thong tin cua bai hat nay (y/n)?  \n");
+	del = pos[del -1];
+	printSong(list[del], 0);
 	char x;
 	scanf("%c", &x);
 	if (x == 'y') {
-		del = pos[del -1];
+		//printSong(list[*num - 1], 1);
 		free(list[del].n);
     	free(list[del].s);
     	free(list[del].m);
@@ -205,11 +207,12 @@ int delete(song *list, int *num, const char *filename) {
 
     FILE *out = fopen(filename, "w");
     for(int i = 0; i < *num; i++) {
-    	//printf("%d\n", i);
+		//printSong(list[i], i);
 		if (i == 0) {
 			fprintf(out, "%s#*#%s#*#%s#*#%d", list[i].n, list[i].s, list[i].m, list[i].y);
-		}
+		} else {
 		fprintf(out, "\n%s#*#%s#*#%s#*#%d", list[i].n, list[i].s, list[i].m, list[i].y);
+		}
     }
     fclose(out);
     return del;
