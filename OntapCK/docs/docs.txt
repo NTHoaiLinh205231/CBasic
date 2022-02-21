@@ -1,0 +1,15 @@
+Cho 1 tập văn bản được lưu trong 1 tệp collection.txt theo định dạng:
+Dòng đầu tiên là 1 số nguyên n, tiếp theo là n dòng, mỗi dòng lưu thông tin về một văn bản 
+đầu tiên là dli - số lượng từ trong văn bản, sau đó là dli từ (không chứa dấu cách, độ dài 
+tối đa không quá 20 ký tự).
+3
+5 aaa bbb ccc aaa ccc
+6 abc cba acb acb bac bbb
+3 aaabb bbbaa bbbaa
+Yêu cầu: Viết chương trình đọc tệp collection.txt và lưu tập văn bản trong 1 vec-tơ (gvec_t), 
+mỗi văn bản được biểu diễn như 1 ánh xạ (cây rbm_t) với khóa là từ và giá trị là số lần từ 
+xuất hiện trong văn bản. (Như vậy chúng ta sẽ có 1 vec-tơ của các cây rbm_t).
+Sau đó chương trình xuất dữ liệu ra màn hình, mỗi biểu diễn văn bản 1 dòng:
+3 - aaa:2 bbb:1 ccc:2
+5 - abc:1 cba:1 acb:2 bac:1 bbb:1
+2 - aaabb:1 bbbaa:2

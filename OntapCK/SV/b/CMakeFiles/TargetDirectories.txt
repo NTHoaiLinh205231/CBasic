@@ -1,0 +1,3 @@
+/media/sf_CBasic/DeCK/SV/b/CMakeFiles/rebuild_cache.dir
+/media/sf_CBasic/DeCK/SV/b/CMakeFiles/edit_cache.dir
+/media/sf_CBasic/DeCK/SV/b/CMakeFiles/prog.dir

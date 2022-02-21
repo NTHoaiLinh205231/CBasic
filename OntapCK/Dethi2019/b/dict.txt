@@ -1,0 +1,10 @@
+school truong_hoc
+computer may_tinh
+like thich
+phone dien_thoai
+group nhom
+basic co_ban
+choice lua_chon
+struct cau_truc
+heart trai_tim
+print in

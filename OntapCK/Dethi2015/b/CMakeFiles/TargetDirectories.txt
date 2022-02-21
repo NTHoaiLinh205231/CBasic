@@ -1,0 +1,3 @@
+/media/sf_CBasic/DeCK/Dethi2015/b/CMakeFiles/rebuild_cache.dir
+/media/sf_CBasic/DeCK/Dethi2015/b/CMakeFiles/edit_cache.dir
+/media/sf_CBasic/DeCK/Dethi2015/b/CMakeFiles/prog.dir

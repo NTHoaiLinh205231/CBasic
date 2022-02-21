@@ -1,0 +1,21 @@
+Mục đích: Ôn tập cách sử dụng gtype và gvec
+Hãy giải 1 bài tập đơn giản sau theo 2 cách:
+Danh sách sản phẩm được cho trong tệp products.txt theo định dạng
+dòng đầu tiên là số nguyên n là số lượng sản phẩm.
+3
+p1 100.2
+p2 200.3
+p3 150.5
+tiếp theo là n dòng chứa thông tin về các sản phẩm bao gồm
+mã sản phẩm (không chứa dấu cách) vài giá sản phẩm (số thực).
+Yêu cầu: Viết chương trình tìm tất cả các sản phẩm có giá cao nhất.
+.
+Các giải pháp:
+Tạo cấu trúc để lưu thông tin cho từng sản phẩm, sau đó:
+Cách 1: Lưu danh sách sản phẩm vào vec-tơ (gvec_t)
+sử dụng con trỏ void * của giá trị gtype.
+Cách 2: Lưu danh sách sản phẩm vào vec-tơ (gvec_t)
+bổ xung con trỏ tới bản ghi product vào gtype,
+và sử dụng con trỏ đó (ví dụ struct product *prod;).
+.
+Trả lời khảo sát sau khi hoàn thành cả 2 cách.

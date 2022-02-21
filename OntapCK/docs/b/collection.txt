@@ -1,0 +1,9 @@
+8
+5 aaa bbb ccc aaa ccc
+6 abc cba acb acb bac bbb
+3 aaabb bbbaa bbbaa
+4 c c c basic
+8 nguyen thi hoai hoai linh linh linh linh
+1 20205231
+6 cong nghe thong tin viet phap
+3 10 10 2002

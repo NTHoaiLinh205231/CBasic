@@ -1,0 +1,4 @@
+# ninja log v5
+84	119	1645195379043550200	prog	ab7a938efbcc0a9b
+15	83	1645195379006561000	CMakeFiles/prog.dir/main.o	2cbb1f86c25b5546
+3	529	1645190547311580200	CMakeFiles/prog.dir/cgen/all.o	a8519eb1d893a059
